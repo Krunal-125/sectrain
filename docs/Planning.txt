@@ -1,0 +1,181 @@
+🧠 Phase 1: Project Setup & Planning (Week 1)
+
+🔧 Tasks
+	•	Define project scope and constraints
+	•	Set up GitHub/GitLab repo and Kanban board (e.g., via GitHub Projects, Notion, or Trello)
+	•	Choose project folder structure
+	•	Document goals, requirements, and initial roadmap
+
+✅ Deliverables
+	•	Project brief (README.md)
+	•	Task board setup
+	•	Initial folder structure
+
+🛠 Tools
+	•	Git, GitHub/GitLab
+	•	Markdown, Notion/Trello
+
+⸻
+
+📚 Phase 2: Literature Review & Research (Week 2–3)
+
+🔧 Tasks
+	•	Review RAG vs. fine-tuning trade-offs
+	•	Analyze open-source LLMs (SecureFalcon, WhiteRabbitNeo, Mistral-7B)
+	•	Compare vector DBs (FAISS, Chroma)
+	•	Study LangChain vs. LlamaIndex for local RAG
+	•	Research educational chatbot architectures
+
+✅ Deliverables
+	•	Research comparison document
+	•	Selection justification for:
+	•	LLM
+	•	Vector DB
+	•	RAG framework
+
+🛠 Tools
+	•	Notion/Obsidian
+	•	Google Scholar, arXiv, Hugging Face
+
+⸻
+
+🧹 Phase 3: Data Collection & Preprocessing (Week 4–5)
+
+🔧 Tasks
+	•	Collect and convert lecture slides to text
+	•	Scrape OWASP resources (using requests, BeautifulSoup, Scrapy)
+	•	Extract and clean CVE/NVD data
+	•	Curate good/bad secure coding examples
+	•	Create metadata schema for documents
+
+✅ Deliverables
+	•	Preprocessed data in structured format (e.g., JSONL or Markdown chunks)
+	•	Web scraping scripts
+	•	Data cleaning scripts
+
+🛠 Tools
+	•	Python, pandas
+	•	BeautifulSoup, pdfminer, markdownify
+
+⸻
+
+🔍 Phase 4: RAG Pipeline Development (Week 6–7)
+
+🔧 Tasks
+	•	Set up local RAG pipeline (LangChain/LlamaIndex)
+	•	Load and embed documents using FAISS or Chroma
+	•	Integrate SecureFalcon or Mistral via local inference
+	•	Create context-aware question-answering pipeline
+
+✅ Deliverables
+	•	Working RAG prototype
+	•	Scripted RAG pipeline (rag_pipeline.py)
+
+🛠 Tools
+	•	LangChain or LlamaIndex
+	•	FAISS or Chroma
+	•	SecureFalcon/Mistral (via GGUF + llama.cpp or similar)
+
+⸻
+
+🧪 Phase 5: Prototyping & Evaluation Framework (Week 8–9)
+
+🔧 Tasks
+	•	Build evaluation dataset of queries (from students or CTF use cases)
+	•	Implement accuracy metrics (F1, BERTScore)
+	•	Implement engagement metrics (response time, feedback prompts)
+	•	Build logging for contextual memory tracking
+
+✅ Deliverables
+	•	Evaluation scripts
+	•	Benchmark results vs. baseline (e.g., base LLM without RAG)
+
+🛠 Tools
+	•	HuggingFace metrics
+	•	Python logging
+	•	Benchmark notebook
+
+⸻
+
+💬 Phase 6: Chatbot UX Design & Integration (Week 10–11)
+
+🔧 Tasks
+	•	Design chatbot flow (using Google’s Conversation Design Framework)
+	•	Implement local chat UI (e.g., Streamlit, Gradio, or Flask)
+	•	Integrate with CTF platform (mock or real)
+	•	Enable progress tracking via session memory
+
+✅ Deliverables
+	•	Functional chatbot interface
+	•	Dialog flows and use cases
+	•	Integration with CTF backend (if available)
+
+🛠 Tools
+	•	Streamlit / Gradio / Flask
+	•	SQLite or JSON for session history
+	•	Rasa (optional, for more advanced dialog management)
+
+⸻
+
+🔁 Phase 7: Iteration & Testing (Week 12)
+
+🔧 Tasks
+	•	Conduct testing with peers/students
+	•	Collect feedback on usability and performance
+	•	Fine-tune LLM if needed on domain-specific examples
+
+✅ Deliverables
+	•	User feedback summary
+	•	Updated model or prompt tuning
+	•	Bug fixes and enhancements
+
+⸻
+
+📦 Phase 8: Documentation & Deployment (Week 13)
+
+🔧 Tasks
+	•	Document architecture, usage, and setup
+	•	Create a requirements.txt and install guide
+	•	Package as an open-source project
+	•	Optional: Deploy offline version via Docker
+
+✅ Deliverables
+	•	Full project documentation (README, Wiki)
+	•	Final presentation/demo video
+	•	Packaged codebase (optionally with Dockerfile)
+
+⸻
+
+📊 Phase 9: Final Evaluation & Reflection (Week 14)
+
+🔧 Tasks
+	•	Run final benchmarks
+	•	Compare performance against goals
+	•	Write final reflection/report (for class or publication)
+
+✅ Deliverables
+	•	Final benchmark report
+	•	Lessons learned
+	•	Research insights document
+
+⸻
+
+🗂 Bonus Folder Structure Suggestion
+
+sectrain/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── scripts/
+│   ├── scraping/
+│   └── rag/
+├── models/
+├── chatbot_ui/
+├── evaluation/
+├── docs/
+│   └── architecture.md
+├── README.md
+├── requirements.txt
+└── Dockerfile (optional)
+
+
